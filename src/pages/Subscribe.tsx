@@ -31,7 +31,7 @@ export function Subscribe() {
         <div className="flex flex-col items-center max-w-[640px] w-11/12 sm:items-start">
           <Logo />
 
-          <h1 className="mt-8 text-[1.9rem] leading-tight sm:text-[2.5rem]">
+          <h1 className="mt-8 text-[1.9rem] max-w-[20rem] leading-tight sm:text-[2.5rem] sm:max-w-full">
             Construa uma{" "}
             <strong className="text-blue-500">aplicação completa</strong>, do
             zero, com <strong className="text-blue-500">React</strong>
@@ -44,7 +44,7 @@ export function Subscribe() {
         </div>
 
         <div className="w-full p-8 bg-gray-700 sm:border sm:border-gray-500 sm:rounded sm:max-w-sm">
-          <strong className="text-2xl mb-6 block">
+          <strong className="text-start text-lg mb-6 block sm:text-2xl">
             Inscreva-se gratuitamente
           </strong>
 
@@ -74,7 +74,15 @@ export function Subscribe() {
           </form>
         </div>
       </div>
-      <img src="/src/assets/code-mockup.png" className="mt-10" alt="" />
+      <div className="flex py-3 items-center justify-center mx-auto sm:py-0">
+        <div className="sm:mt-10 w-[98%] sm:w-full">
+          <img
+            src="/src/assets/code-mockup.png"
+            className="w-full object-cover"
+            alt="Imagem de code mockup"
+          />
+        </div>
+      </div>
       <Footer />
     </div>
   );
